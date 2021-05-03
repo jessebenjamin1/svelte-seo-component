@@ -20,17 +20,14 @@
 	<meta name="description" content={description} />
 	<meta name="robots" content={robots} />
 	<!-- Open Graph Tags -->
-	<meta property="og:title" content={ogTitle ? ogTitle : title} />
-	<meta property="og:description" content={ogDescription ? ogDescription : description} />
+	<meta property="og:title" content={ogTitle || title} />
+	<meta property="og:description" content={ogDescription || description} />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content={ogImage ? `${url}${ogImage}` : `${url}${image}`} />
 	<meta property="og:url" content={`${url}${slug}`} />
 	<!-- Twitter Tags -->
-	<meta property="twitter:title" content={twitterTitle ? twitterTitle : title} />
-	<meta
-		property="twitter:description"
-		content={twitterDescription ? twitterDescription : description}
-	/>
+	<meta property="twitter:title" content={twitterTitle || title} />
+	<meta property="twitter:description" content={twitterDescription || description} />
 	<meta
 		property="twitter:image"
 		content={twitterImage ? `${url}${twitterImage}` : `${url}${image}`}
