@@ -6,6 +6,8 @@ You can set a default title, description, and image in the component itself. Whe
 
 This component also accepts Open Graph- & Twitter-specific props that will override the generic <code>title</code> and <code>description</code> values if passed.
 
+The logic of the component assumes that the default value for <code>image</code> and <code>alt</code> are set for a global default sharing image.
+
 If you really wanted to, you could have different titles, descriptions, and images for Search Engines, Facebook, and Twitter 🤷
 
 Here's an example of how the component could be used:
