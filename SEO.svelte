@@ -6,7 +6,7 @@
 		'This is the default metadescription that will be applied if no description is passed to the SEO component.';
 	export let ogDescription;
 	export let twitterDescription;
-	export let image = '/defaultimage.jpg';
+	export let image = '/static/defaultimage.jpg';
 	export let ogImageWidth;
 	export let ogImageHeight;
 	export let alt = "default image alt"
