@@ -4,11 +4,9 @@ This is a component which can be used to set common meta tags in the <code>head<
 
 You can set a default title, description, and image in the component itself. When using the component. It is recommended to always pass <code>title</code> and <code>description</code> as props to avoid duplicate titles and metadescriptions. These props will set title & description meta tags, as well as associated Open Graph & Twitter tags.
 
-**I recommend adding your default share image to the static folder in Sveltekit projects - that's why all of the image props include static in their path.**
-
 This component also accepts Open Graph- & Twitter-specific props that will override the generic <code>title</code> and <code>description</code> values if passed.
 
-The logic of the component assumes that the default value for <code>image</code> and <code>alt</code> are set for a global default sharing image.
+The logic of the component assumes that the default value for <code>image</code> and <code>alt</code> are set for a global default sharing image. I recommend adding your default share image to the static folder in Sveltekit projects - that's why all of the image props include static in their path.
 
 Here's an example of a very standard instance of the component, assuming that all of the default values have been changed to be relevant to the project:
 
